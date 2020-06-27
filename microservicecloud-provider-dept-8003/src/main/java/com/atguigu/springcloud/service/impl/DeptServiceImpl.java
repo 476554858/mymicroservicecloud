@@ -2,6 +2,7 @@ package com.atguigu.springcloud.service.impl;
 
 import java.util.List;
 
+import com.atguigu.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import com.atguigu.springcloud.entities.Dept;
 import com.atguigu.springcloud.service.DeptClientService;
 
 @Service
-public class DeptServiceImpl implements DeptClientService
+public class DeptServiceImpl implements DeptService
 {
 	@Autowired
 	private DeptDao dao;

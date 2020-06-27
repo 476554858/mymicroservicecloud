@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
-    <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
       <entry name="!?*.form" />
@@ -14,14 +12,10 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="microservicecloud-api" />
         <module name="microservicecloud-config-3344" />
         <module name="microservicecloud-config-client-3355" />
@@ -39,22 +33,22 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="microservicecloud" target="1.8" />
-      <module name="microservicecloud-api" target="1.8" />
-      <module name="microservicecloud-config-3344" target="1.8" />
-      <module name="microservicecloud-config-client-3355" target="1.8" />
+      <module name="microservicecloud" target="1.6" />
+      <module name="microservicecloud-api" target="1.6" />
+      <module name="microservicecloud-config-3344" target="1.6" />
+      <module name="microservicecloud-config-client-3355" target="1.6" />
       <module name="microservicecloud-config-dept-client-8002" target="1.8" />
       <module name="microservicecloud-config-dept-client-8003" target="1.8" />
-      <module name="microservicecloud-consumer-dept-80" target="1.8" />
-      <module name="microservicecloud-consumer-dept-feign" target="1.8" />
-      <module name="microservicecloud-eureka-7001" target="1.8" />
-      <module name="microservicecloud-eureka-7002" target="1.8" />
-      <module name="microservicecloud-eureka-7003" target="1.8" />
-      <module name="microservicecloud-provider-dept-8001" target="1.8" />
-      <module name="microservicecloud-provider-dept-8002" target="1.8" />
-      <module name="microservicecloud-provider-dept-8003" target="1.8" />
-      <module name="microservicecloud-provider-dept-hystrix-8001" target="1.8" />
-      <module name="microservicecloud-zuul-gateway-9527" target="1.8" />
+      <module name="microservicecloud-consumer-dept-80" target="1.6" />
+      <module name="microservicecloud-consumer-dept-feign" target="1.6" />
+      <module name="microservicecloud-eureka-7001" target="1.6" />
+      <module name="microservicecloud-eureka-7002" target="1.6" />
+      <module name="microservicecloud-eureka-7003" target="1.6" />
+      <module name="microservicecloud-provider-dept-8001" target="1.6" />
+      <module name="microservicecloud-provider-dept-8002" target="1.6" />
+      <module name="microservicecloud-provider-dept-8003" target="1.6" />
+      <module name="microservicecloud-provider-dept-hystrix-8001" target="1.6" />
+      <module name="microservicecloud-zuul-gateway-9527" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -15,7 +15,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/clouddb01?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 123
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -24,7 +24,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+#      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true #显示ip
