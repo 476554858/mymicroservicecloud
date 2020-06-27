@@ -25,6 +25,7 @@
         <module name="microservicecloud-eureka-7001" />
         <module name="microservicecloud-eureka-7002" />
         <module name="microservicecloud-eureka-7003" />
+        <module name="microservicecloud-hystrix-dashboard" />
         <module name="microservicecloud-provider-dept-8001" />
         <module name="microservicecloud-provider-dept-8002" />
         <module name="microservicecloud-provider-dept-8003" />
@@ -44,6 +45,7 @@
       <module name="microservicecloud-eureka-7001" target="1.6" />
       <module name="microservicecloud-eureka-7002" target="1.6" />
       <module name="microservicecloud-eureka-7003" target="1.6" />
+      <module name="microservicecloud-hystrix-dashboard" target="1.6" />
       <module name="microservicecloud-provider-dept-8001" target="1.6" />
       <module name="microservicecloud-provider-dept-8002" target="1.6" />
       <module name="microservicecloud-provider-dept-8003" target="1.6" />

@@ -21,6 +21,7 @@
         <module>microservicecloud-zuul-gateway-9527</module>
         <module>microservicecloud-config-3344</module>
         <module>microservicecloud-config-client-3355</module>
+        <module>microservicecloud-hystrix-dashboard</module>
     </modules>
 
     <properties>
