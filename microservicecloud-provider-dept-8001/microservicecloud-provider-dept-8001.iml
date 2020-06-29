@@ -210,5 +210,7 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-devtools:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-captcha:4.6.8" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.8" level="project" />
   </component>
 </module>
