@@ -29,6 +29,8 @@
         <module name="microservicecloud-provider-dept-8001" />
         <module name="microservicecloud-provider-dept-8002" />
         <module name="microservicecloud-provider-dept-8003" />
+        <module name="microservicecloud-provider-dept-8003 (1)" />
+        <module name="microservicecloud-provider-dept-8004" />
         <module name="microservicecloud-provider-dept-hystrix-8001" />
         <module name="microservicecloud-zuul-gateway-9527" />
       </profile>
@@ -49,6 +51,8 @@
       <module name="microservicecloud-provider-dept-8001" target="1.6" />
       <module name="microservicecloud-provider-dept-8002" target="1.6" />
       <module name="microservicecloud-provider-dept-8003" target="1.6" />
+      <module name="microservicecloud-provider-dept-8003 (1)" target="1.6" />
+      <module name="microservicecloud-provider-dept-8004" target="1.6" />
       <module name="microservicecloud-provider-dept-hystrix-8001" target="1.6" />
       <module name="microservicecloud-zuul-gateway-9527" target="1.6" />
     </bytecodeTargetLevel>
