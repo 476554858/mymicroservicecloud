@@ -39,3 +39,4 @@ hs_err_pid*
 /microservicecloud-provider-dept-8003/target/
 /microservicecloud-provider-dept-8004/target/
 /microservicecloud-provider-dept-hystrix-8001/target/
+/.idea/
