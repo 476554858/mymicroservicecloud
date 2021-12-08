@@ -11,3 +11,6 @@ spring:
 feign:
   hystrix:
     enabled: true
+logging:
+  level:
+    com.atguigu.springcloud.service.DeptClientService: debug
