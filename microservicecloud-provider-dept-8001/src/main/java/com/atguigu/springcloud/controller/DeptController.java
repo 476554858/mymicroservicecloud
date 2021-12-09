@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.controller;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import com.atguigu.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,12 @@ public class DeptController
 	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
 	public List<Dept> list()
 	{
+		//模拟超时
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return service.list();
 	}
 
