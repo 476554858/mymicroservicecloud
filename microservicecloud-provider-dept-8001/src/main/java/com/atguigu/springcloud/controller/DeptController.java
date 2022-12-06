@@ -39,11 +39,11 @@ public class DeptController
 	public List<Dept> list()
 	{
 		//模拟超时
-		try {
-			TimeUnit.SECONDS.sleep(3);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			TimeUnit.SECONDS.sleep(3);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		return service.list();
 	}
 
