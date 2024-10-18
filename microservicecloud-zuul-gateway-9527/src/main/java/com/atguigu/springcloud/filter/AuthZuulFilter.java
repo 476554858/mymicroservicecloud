@@ -17,6 +17,7 @@ public class AuthZuulFilter extends ZuulFilter {
 
     /**
      * filter的类型：前置pre 后置：post
+     *
      * @return
      */
     @Override
@@ -26,6 +27,7 @@ public class AuthZuulFilter extends ZuulFilter {
 
     /**
      * filter的顺序，值越小，越先执行
+     *
      * @return
      */
     @Override
@@ -35,6 +37,7 @@ public class AuthZuulFilter extends ZuulFilter {
 
     /**
      * 判断请求是否需要过滤
+     *
      * @return
      */
     @Override
@@ -42,7 +45,7 @@ public class AuthZuulFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         // 是否某一个服务的请求
-        if(request.getRequestURI().contains("dept")){
+        if (request.getRequestURI().contains("dept")) {
             return true;
         }
         return false;
@@ -50,6 +53,7 @@ public class AuthZuulFilter extends ZuulFilter {
 
     /**
      * 请求过滤的规则
+     *
      * @return
      */
     @Override
@@ -57,13 +61,14 @@ public class AuthZuulFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         String token = request.getHeader("token");
-        if(StringUtils.isBlank(token)){
+        if (StringUtils.isBlank(token)) {
             token = request.getParameter("token");
         }
         // 没有携带token，不允许访问
-        if(StringUtils.isBlank(token)){
+        if (StringUtils.isBlank(token)) {
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
+            ctx.setResponseBody(HttpStatus.UNAUTHORIZED.getReasonPhrase());
         }
         return null;
     }
